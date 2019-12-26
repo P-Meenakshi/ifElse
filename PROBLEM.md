@@ -25,7 +25,7 @@ call the functions in the required sequence.
     cd 
     
     Expected Output:
-    Found as expectedhttps://gitlab.stackroute.in/stack_java_cycle1_exercises_assignments/exercise-bt-conditionalstatements-ifelse-solution.git
+    Found as expected
 --------------------------------------------------------
     Sample Input:
     String finder
