@@ -60,14 +60,5 @@ public class StringFinderAppTest {
         String actual = myOutStream.toString().toLowerCase().replaceAll("\\s+", "");
         assertEquals(NOTFOUND.toLowerCase().replaceAll("\\s+", ""),actual,MSG_03);
     }
-    @Test
-    public void givenNullValuesWhenCheckedThenDisplayNull() {
-        input=EMPTYVALUES[0]+"\n"+EMPTYVALUES[1]+"\n"+EMPTYVALUES[2]+"\n";
-        myInputStream = new ByteArrayInputStream(input.getBytes());
-        System.setIn(myInputStream);
 
-        StringFinder.main(null);
-        String actual = myOutStream.toString().toLowerCase().replaceAll("\\s+", "");
-        assertEquals(NOTFOUND.toLowerCase().replaceAll("\\s+", ""),actual,MSG_03);
-    }
 }
