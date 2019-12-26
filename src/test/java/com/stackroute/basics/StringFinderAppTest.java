@@ -22,7 +22,7 @@ public class StringFinderAppTest {
     private ByteArrayInputStream myInputStream;
     private static final String[] VALIDVALUES = {"string finder","string","finder"};
     private static final String[] INVALIDVALUES = {"string finder","finder","string"};
-    private static final String[] EMPTYVALUES = {null,null,null};;
+    private static final String[] EMPTYVALUES = {null,null,null};
     @BeforeEach
     public void setUp() {
         myOutStream = new ByteArrayOutputStream();
