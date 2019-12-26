@@ -1,4 +1,4 @@
-package com.stackroute.basics.commander.test;
+package com.stackroute.basics;
 
 import com.stackroute.basics.StringFinder;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,7 +22,7 @@ public class StringFinderAppTest {
     private ByteArrayInputStream myInputStream;
     private static final String[] VALIDVALUES = {"string finder","string","finder"};
     private static final String[] INVALIDVALUES = {"string finder","finder","string"};
-    private static final String[][] EMPTYVALUES = {{" ","finder","string"}, {null,null,null}};;
+    private static final String[] EMPTYVALUES = {null,null,null};;
     @BeforeEach
     public void setUp() {
         myOutStream = new ByteArrayOutputStream();
@@ -52,7 +52,7 @@ public class StringFinderAppTest {
     }
     @Test
     public void givenEmptyValuesWhenCheckedThenDisplayEmptyOrNotNull() {
-        input=EMPTYVALUES[0][0]+"\n"+EMPTYVALUES[0][1]+"\n"+EMPTYVALUES[0][2]+"\n";
+        input=EMPTYVALUES[0]+"\n"+EMPTYVALUES[1]+"\n"+EMPTYVALUES[2]+"\n";
         myInputStream = new ByteArrayInputStream(input.getBytes());
         System.setIn(myInputStream);
 
@@ -62,7 +62,7 @@ public class StringFinderAppTest {
     }
     @Test
     public void givenNullValuesWhenCheckedThenDisplayNull() {
-        input=EMPTYVALUES[1][0]+"\n"+EMPTYVALUES[1][1]+"\n"+EMPTYVALUES[1][2]+"\n";
+        input=EMPTYVALUES[0]+"\n"+EMPTYVALUES[1]+"\n"+EMPTYVALUES[2]+"\n";
         myInputStream = new ByteArrayInputStream(input.getBytes());
         System.setIn(myInputStream);
 
