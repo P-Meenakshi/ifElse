@@ -1,7 +1,5 @@
 package com.stackroute.basics;
 
-import java.util.Scanner;
-
 public class StringFinder {
     //Create Scanner object as instance variable
 
