@@ -5,7 +5,6 @@ public class StringFinder {
 
     public static void main(String[] args) {
        //Get 3 strings from the user
-
     }
 
     public String getInput()
@@ -16,7 +15,6 @@ public class StringFinder {
     public void displayResult(boolean result)
     {
         //displays the result
-
     }
 
     public  boolean findString(String searchString, String str1, String str2) {
