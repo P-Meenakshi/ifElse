@@ -17,7 +17,7 @@ public class StringFinder {
         //displays the result
     }
 
-    public  boolean findString(String searchString, String str1, String str2) {
+    public  boolean findString(String searchString, String first, String second) {
             return false;
     }
 }
