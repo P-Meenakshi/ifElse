@@ -1,5 +1,6 @@
 package com.stackroute.basics;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -27,6 +28,10 @@ public class StringFinderAppTests {
         System.setOut(new PrintStream(myOutStream));
     }
 
+    @AfterEach
+    public void teardown() {
+        myOutStream=null;
+    }
     @Test
     public void givenValidValuesWhenCheckedThenDisplayFound() {
         input = VALID_VALUES[0] + "\n" + VALID_VALUES[0] + "\n" + VALID_VALUES[2] + "\n";
