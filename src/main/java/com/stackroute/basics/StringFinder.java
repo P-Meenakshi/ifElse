@@ -4,7 +4,7 @@ public class StringFinder {
     //Create Scanner object as instance variable
 
     public static void main(String[] args) {
-        //Get 3 strings from the user
+        //Get three strings from the user
     }
 
     public String getInput() {
@@ -15,7 +15,7 @@ public class StringFinder {
         //displays the result
     }
 
-    public boolean findString(String searchString, String first, String second) {
+    public boolean findString(String searchString, String firstString, String secondString) {
         return false;
     }
 }
