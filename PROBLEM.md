@@ -4,19 +4,24 @@
 
 **This exercise contains a class named StringFinder with the following methods:**
 
-    getInput():String  
-    findString(String,String,String):boolean
-    displayResutl():void  
-
-- Three input strings are scanned for searchString,firstString and secondString respectively from the getInput() method  
-- findString() method returns true if the secondString comes after after firstString in the searchString.
-   - If the input string is empty/null, or if the strings are not found as expected then false should be returned. 
-- displayResult() displays the result as shown in example section. Display **Empty or Not found**, if the String is null or empty
-- Input Strings can contain alphanumeric character, spaces and special characters
+    +getInput() : String 
+    - Should scan for three input strings naming searchString,firstString and secondString respectively. 
+--------------------------------------------------------------------------------------------- 
+     +findString(String,String,String) : int
+    - Should returns 1 if the secondString comes after after firstString in the searchString.
+    - Should return 0 if the strings are not found as expected.
+    - Should return -1 if the input string is empty/null. 
+    - Input Strings can contain alphanumeric character, spaces and special characters.
+-------------------------------------------------------------------------------------------
+    +displayResutl() : void 
+    - Should displays the result as shown in example section.  
+---------------------------------------------------------------------------------------
+    +closeScanner() : void
+    - Should close the scanner object.
 
 **Do the following in the main method of StringFinder class**
 
-call the functions in the required sequence.  
+Call the functions in the required sequence.  
 
 ## Example
     Sample Input:
@@ -33,15 +38,15 @@ call the functions in the required sequence.
     value  
     
     Expected Output:
-    Empty or Not found
+    Not found
 --------------------------------------------------------
     Sample Input:
     Search value
     first
-    start
+    
     
     Expected Output:
-    Empty or Not found
+    Empty string or null
 
 ## Instructions
 - Avoid printing unnecessary values other than expected output as given in sample

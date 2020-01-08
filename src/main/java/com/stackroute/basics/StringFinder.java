@@ -18,6 +18,7 @@ public class StringFinder {
     public boolean findString(String searchString, String firstString, String secondString) {
         return false;
     }
-    public void closeScanner(){
+
+    public void closeScanner() {
     }
 }
