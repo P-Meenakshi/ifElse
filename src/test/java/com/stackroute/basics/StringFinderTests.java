@@ -33,23 +33,23 @@ public class StringFinderTests {
 
     @Test
     void givenValidValuesWhenCheckedThenReturnOne() {
-        assertEquals(object.findString(VALID_VALUES[0][0], VALID_VALUES[0][1], VALID_VALUES[0][2]), 1, MESSAGE_ONE);
-        assertEquals(object.findString(VALID_VALUES[1][0], VALID_VALUES[1][1], VALID_VALUES[1][2]), 1, MESSAGE_ONE);
+        assertEquals(1, object.findString(VALID_VALUES[0][0], VALID_VALUES[0][1], VALID_VALUES[0][2]), MESSAGE_ONE);
+        assertEquals(1, object.findString(VALID_VALUES[1][0], VALID_VALUES[1][1], VALID_VALUES[1][2]), MESSAGE_ONE);
     }
 
     @Test
     void givenInvalidValuesWhenCheckedThenReturnZero() {
-        assertEquals(object.findString(INVALID_VALUES[0][0], INVALID_VALUES[0][1], INVALID_VALUES[0][2]), 0, MESSAGE_TWO);
-        assertEquals(object.findString(INVALID_VALUES[1][0], INVALID_VALUES[1][1], INVALID_VALUES[1][2]), 0, MESSAGE_TWO);
-        assertEquals(object.findString(INVALID_VALUES[2][0], INVALID_VALUES[2][1], INVALID_VALUES[2][2]), 0, MESSAGE_TWO);
+        assertEquals(0, object.findString(INVALID_VALUES[0][0], INVALID_VALUES[0][1], INVALID_VALUES[0][2]), MESSAGE_TWO);
+        assertEquals(0, object.findString(INVALID_VALUES[1][0], INVALID_VALUES[1][1], INVALID_VALUES[1][2]), MESSAGE_TWO);
+        assertEquals(0, object.findString(INVALID_VALUES[2][0], INVALID_VALUES[2][1], INVALID_VALUES[2][2]), MESSAGE_TWO);
     }
 
     @Test
     void givenEmptyOrNullValuesWhenCheckedThenReturnMinusOne() {
-        assertEquals(object.findString(EMPTY_VALUES[0][0], EMPTY_VALUES[0][1], EMPTY_VALUES[0][2]), -1, MESSAGE_THREE);
-        assertEquals(object.findString(EMPTY_VALUES[1][0], EMPTY_VALUES[1][1], EMPTY_VALUES[1][2]), -1, MESSAGE_THREE);
-        assertEquals(object.findString(EMPTY_VALUES[2][0], EMPTY_VALUES[2][1], EMPTY_VALUES[2][2]), -1, MESSAGE_THREE);
-        assertEquals(object.findString(EMPTY_VALUES[3][0], EMPTY_VALUES[3][1], EMPTY_VALUES[3][2]), -1, MESSAGE_THREE);
+        assertEquals(-1, object.findString(EMPTY_VALUES[0][0], EMPTY_VALUES[0][1], EMPTY_VALUES[0][2]), MESSAGE_THREE);
+        assertEquals(-1, object.findString(EMPTY_VALUES[1][0], EMPTY_VALUES[1][1], EMPTY_VALUES[1][2]), MESSAGE_THREE);
+        assertEquals(-1, object.findString(EMPTY_VALUES[2][0], EMPTY_VALUES[2][1], EMPTY_VALUES[2][2]), MESSAGE_THREE);
+        assertEquals(-1, object.findString(EMPTY_VALUES[3][0], EMPTY_VALUES[3][1], EMPTY_VALUES[3][2]), MESSAGE_THREE);
     }
 }
 
