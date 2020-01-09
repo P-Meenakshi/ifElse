@@ -8,7 +8,7 @@
     - Should scan for three input strings naming searchString,firstString and secondString respectively. 
 --------------------------------------------------------------------------------------------- 
      +findString(String,String,String) : int
-    - Should returns 1 if the secondString comes after after firstString in the searchString.
+    - Should return 1 if the secondString comes after after firstString in the searchString.
     - Should return 0 if the strings are not found as expected.
     - Should return -1 if the input string is empty/null. 
     - Input Strings can contain alphanumeric character, spaces and special characters.
