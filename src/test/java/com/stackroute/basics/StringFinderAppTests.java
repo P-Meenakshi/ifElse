@@ -22,7 +22,7 @@ public class StringFinderAppTests {
     private ByteArrayInputStream myInputStream;
     private static final String[] VALID_VALUES = {"string finder", "string", "finder"};
     private static final String[] INVALID_VALUES = {"string finder", "finder", "string"};
-    private static final String[] EMPTY_VALUES = {"", "finder", "string"};
+    private static final String[][] EMPTY_VALUES = {{"", "finder", "string"}, {"string not found", "", "string"}};
 
     @BeforeEach
     public void setUp() {
@@ -58,8 +58,19 @@ public class StringFinderAppTests {
     }
 
     @Test
+    public void givenEmptyValuesForSearchStringWhenCheckedThenDisplayEmpty() {
+        input = EMPTY_VALUES[0][0] + "\n" + EMPTY_VALUES[0][1] + "\n" + EMPTY_VALUES[0][2] + "\n";
+        myInputStream = new ByteArrayInputStream(input.getBytes());
+        System.setIn(myInputStream);
+
+        StringFinder.main(null);
+        String actual = myOutStream.toString().toLowerCase().replaceAll("\\s+", "");
+        assertEquals(EMPTY.toLowerCase().replaceAll("\\s+", ""), actual, MESSAGE_THREE);
+    }
+
+    @Test
     public void givenEmptyValuesForFirstStringWhenCheckedThenDisplayEmpty() {
-        input = EMPTY_VALUES[0] + "\n" + EMPTY_VALUES[1] + "\n" + EMPTY_VALUES[2] + "\n";
+        input = EMPTY_VALUES[1][0] + "\n" + EMPTY_VALUES[1][1] + "\n" + EMPTY_VALUES[1][2] + "\n";
         myInputStream = new ByteArrayInputStream(input.getBytes());
         System.setIn(myInputStream);
 
