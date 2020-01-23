@@ -9,9 +9,9 @@ Refer the problem.md file for problem description.
 
 2. **CLONE** the forked repository, containing the boilerplate in your local machine
      
-3. Navigate to exercise-bt-conditionalStatements-ifelse-boilerplate folder
+3. Navigate to exercise-bt-conditionalStatements-ifelse folder
 
-    `cd exercise-bt-conditionalStatements-ifelse-boilerplate`
+    `cd exercise-bt-conditionalStatements-ifelse`
 
 4. Check the status of your repository
      
